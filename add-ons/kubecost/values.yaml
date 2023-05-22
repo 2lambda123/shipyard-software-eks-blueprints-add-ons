@@ -20,7 +20,15 @@ cost-analyzer:
       image:
         repository: public.ecr.aws/kubecost/prometheus
         tag: v2.35.0
+    serviceAccounts:
+      nodeExporter:
+        create: false
+
+    kube-state-metrics:
+      disabled: false
+
     nodeExporter:
+      enabled: false
       tolerations:
         - operator: 'Exists'
 
