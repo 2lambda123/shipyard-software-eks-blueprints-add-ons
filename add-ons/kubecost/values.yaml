@@ -3,9 +3,6 @@ cost-analyzer:
     grafana:
       enabled: false
       proxy: false
-    prometheus:
-      enabled: false
-      fqdn: http://grafana-stack-kube-prometh-prometheus:9090
 
   imageVersion: prod-1.103.3
   kubecostFrontend:
