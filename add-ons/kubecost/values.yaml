@@ -15,6 +15,9 @@ cost-analyzer:
     emitPodAnnotations: true
     emitNamespaceAnnotations: true
 
+  nodeSelector:
+    nodeType: admin
+
   prometheus:
     server:
       image:

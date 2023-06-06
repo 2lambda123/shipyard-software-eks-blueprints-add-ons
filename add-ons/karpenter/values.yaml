@@ -3,6 +3,7 @@ karpenter:
     create: false
   nodeSelector:
     kubernetes.io/os: linux
+    nodeType: admin
   settings:
     aws:
       clusterName:
