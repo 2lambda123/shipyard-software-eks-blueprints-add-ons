@@ -27,6 +27,9 @@ cost-analyzer:
       nodeExporter:
         create: false
 
+    nodeSelector:
+      nodeType: admin
+
     kube-state-metrics:
       disabled: false
 
