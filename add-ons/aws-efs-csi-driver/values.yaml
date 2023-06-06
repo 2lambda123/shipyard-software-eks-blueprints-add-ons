@@ -2,6 +2,9 @@ aws-efs-csi-driver:
   controller:
     serviceAccount:
       create: false
+    nodeSelector:
+      kubernetes.io/os: linux
+      nodeType: admin
   node:
     serviceAccount:
       create: false
