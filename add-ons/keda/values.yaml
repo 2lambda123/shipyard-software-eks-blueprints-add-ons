@@ -11,3 +11,4 @@ resources:
 
 nodeSelector:
   kubernetes.io/os: linux
+  nodeType: admin
