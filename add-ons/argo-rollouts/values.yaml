@@ -1,3 +1,4 @@
-controller:
-  nodeSelector:
-    nodeType: admin
+argo-rollouts:
+  controller:
+    nodeSelector:
+      nodeType: admin
