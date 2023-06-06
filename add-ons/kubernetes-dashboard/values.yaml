@@ -1,3 +1,6 @@
 kubernetes-dashboard:
   serviceAccount:
     create: false
+
+  nodeSelector:
+    nodeType: admin
