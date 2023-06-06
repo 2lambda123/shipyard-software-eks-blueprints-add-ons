@@ -23,15 +23,18 @@ cost-analyzer:
       image:
         repository: public.ecr.aws/kubecost/prometheus
         tag: v2.35.0
+
+      nodeSelector:
+        nodeType: admin
     serviceAccounts:
       nodeExporter:
         create: false
 
-    nodeSelector:
-      nodeType: admin
-
     kube-state-metrics:
       disabled: false
+
+      nodeSelector:
+        nodeType: admin
 
     nodeExporter:
       enabled: false
